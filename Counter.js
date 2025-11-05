@@ -29,6 +29,8 @@ calls[i] === "call"
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+ Code:
+
  * @param {number} n
  * @return {Function} counter
  */
@@ -38,3 +40,12 @@ var createCounter = function(n) {
         return n++;
     };
 };
+
+
+Output:
+
+const counter = createCounter(10);
+console.log(counter()); // 10
+console.log(counter()); // 11
+console.log(counter()); // 12
+
